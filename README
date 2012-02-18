@@ -1,7 +1,7 @@
 みくったーにサーバ機能を持たせて，コマンドでつぶやけます．それ以外の機能はありません．
 
 使い方：
-	mikutter/plugins に mikutter_server.rb を放り込むか，
+	mikutter/plugin/ に mikutter_server.rb を放り込むか，
 	mikutter上でAlt-xして出てきたコンソールに mikutter_server.rb の中身を貼り付ける．
 
 	つぶやくときは，

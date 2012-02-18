@@ -4,7 +4,7 @@
 	mikutter/plugins に mikutter_server.rb を放り込むか，
 	mikutter上でAlt-xして出てきたコンソールに mikutter_server.rb の中身を貼り付ける．
 
-	つぶやきときは，
+	つぶやくときは，
 	$ ruby mikutter_socket.rb "おなかへった"
 	みたいにすると，「おなかへった」とつぶやけます．
 

@@ -12,7 +12,6 @@ Plugin.create(:mikutter_server) do
         print(s, " is accepted\n")
         while s.gets
           Post.primary_service.post :message => "#{$_}"
-	  s.write("tweeted")
         end
         print(s, " is gone\n")
         s.close

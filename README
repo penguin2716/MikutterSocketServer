@@ -1,0 +1,13 @@
+みくったーにサーバ機能を持たせて，コマンドでつぶやけます．それ以外の機能はありません．
+
+使い方：
+	mikutter/plugins に mikutter_server.rb を放り込むか，
+	mikutter上でAlt-xして出てきたコンソールに mikutter_server.rb の中身を貼り付ける．
+
+	つぶやきときは，
+	$ ruby mikutter_socket.rb "おなかへった"
+	みたいにすると，「おなかへった」とつぶやけます．
+
+バグ：
+	・mikutter_socket.rb に引数を与えなかった場合のエラー処理をしていません．
+	・その他もろもろ

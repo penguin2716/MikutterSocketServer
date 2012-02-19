@@ -21,6 +21,10 @@ else
 	inputstr = ARGV[0]
 end
 
+if(inputstr.length > 140)
+	inputstr = inputstr[0..139]
+end
+
 s = Socket.new(Socket::AF_INET, Socket::SOCK_STREAM, 0)
 sockaddr = Socket.sockaddr_in(PORT, HOST)
 s.connect(sockaddr)

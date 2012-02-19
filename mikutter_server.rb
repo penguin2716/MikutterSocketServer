@@ -15,6 +15,7 @@ Plugin.create(:mikutter_server) do
 	  str += line
         end
         Post.primary_service.post :message => "#{str}"
+        print "[TCPSocket Received Data] #{str}"
         print(s, " is gone\n")
         s.close
       end

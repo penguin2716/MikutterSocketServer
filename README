@@ -8,6 +8,9 @@
 	$ ruby mikutter_socket.rb "おなかへった"
 	みたいにすると，「おなかへった」とつぶやけます．
 
+	あるいは標準入力から
+	$ echo "おなかへった" | ruby mikutter_socket.rb
+	でもつぶやけます．
+
 バグ：
-	・mikutter_socket.rb に引数を与えなかった場合のエラー処理をしていません．
-	・その他もろもろ
+	もろもろ

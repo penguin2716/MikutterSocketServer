@@ -10,9 +10,11 @@ Plugin.create(:mikutter_server) do
     while true
       Thread.start(gs.accept) do |s|       # save to dynamic variable
         print(s, " is accepted\n")
-        while s.gets
-          Post.primary_service.post :message => "#{$_}"
+	str = ''
+        while line = s.gets
+	  str += line
         end
+        Post.primary_service.post :message => "#{str}"
         print(s, " is gone\n")
         s.close
       end
